@@ -1,0 +1,40 @@
+<Shell
+    x:Class="PRG_Lists_Maui_MVVM.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PRG_Lists_Maui_MVVM.View"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MyApp">
+
+    <!-- Flyout-grupp med flikar inuti -->
+    <FlyoutItem Title="Olika bindningar" Icon="icon.png">
+        <Tab Title="Enkel bindning">
+            <ShellContent
+                Title="Enkel binding"
+                ContentTemplate="{DataTemplate local:SimpleExamplePage}" />
+        </Tab>
+        <Tab Title="MVVM binding">
+            <ShellContent
+                Title="MVVM binding"
+                ContentTemplate="{DataTemplate local:MVVMExamplePage}" />
+        </Tab>
+    </FlyoutItem>
+
+    <!-- Enskild sida i meny -->
+    <FlyoutItem Title="Exempel hamburgermeny" Icon="settings.png">
+        <ShellContent
+            Title="Aktuell sida"
+            ContentTemplate="{DataTemplate local:MVVMExamplePage}" />
+        <Tab Title="Enkel bindning">
+            <ShellContent
+                Title="Enkel binding"
+                ContentTemplate="{DataTemplate local:SimpleExamplePage}" />
+        </Tab>
+        <Tab Title="MVVM binding">
+            <ShellContent
+                Title="MVVM binding"
+                ContentTemplate="{DataTemplate local:MVVMExamplePage}" />
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

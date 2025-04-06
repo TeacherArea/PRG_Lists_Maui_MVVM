@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PRG_Lists_Maui_MVVM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b9ed251a404d1289335eca8a52cce8158cf85502")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9478caf374755af3fd5ff25721f0381869d0669c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PRG_Lists_Maui_MVVM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PRG_Lists_Maui_MVVM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

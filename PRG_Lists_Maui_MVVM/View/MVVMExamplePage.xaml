@@ -1,12 +1,51 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PRG_Lists_Maui_MVVM.View.MVVMExamplePage"
-             Title="MVVM Example Page">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:vm="clr-namespace:PRG_Lists_Maui_MVVM.ViewModel"
+             x:Class="PRG_Lists_Maui_MVVM.View.MVVMExamplePage">
+
+    <ContentPage.BindingContext>
+        <vm:MVVMExampleViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <HorizontalStackLayout Spacing="10">
+                <Label VerticalOptions="Center" Text="Namn" />
+                <Entry Text="{Binding Name}" WidthRequest="250"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Label VerticalOptions="Center" Text="Ålder" />
+                <Entry Text="{Binding Age}" WidthRequest="250"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Lösenord" VerticalOptions="Center" />
+                <Entry Text="{Binding Password}" IsPassword="{Binding IsPasswordHidden}" WidthRequest="250"/>
+                <CheckBox IsChecked="{Binding ShowPassword}" />
+                <Label VerticalOptions="Center" Text="Visa lösenord" />
+            </HorizontalStackLayout>
+            
+            <Button 
+                Text="Lägg till person" 
+                Command="{ Binding AddPersonCommand }"/>
+            <CollectionView ItemsSource="{ Binding MyList }">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Span="2" Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <HorizontalStackLayout Spacing="10">
+                            <Label Text="{Binding Name}" />
+                            <Label Text="{Binding Age}" />
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
 </ContentPage>

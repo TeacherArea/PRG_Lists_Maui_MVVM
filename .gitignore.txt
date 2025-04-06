@@ -6,6 +6,10 @@ obj/
 *.userosscache
 *.sln.docstates
 
+**/bin/
+**/obj/
+**/.vs/
+
 # NuGet
 *.nupkg
 *.nuspec

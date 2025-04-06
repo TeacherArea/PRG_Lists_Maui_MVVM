@@ -41,6 +41,3 @@ C:\Users\sewil\source\repos\PRG_Lists_Maui_MVVM\PRG_Lists_Maui_MVVM\obj\Debug\ne
 C:\Users\sewil\source\repos\PRG_Lists_Maui_MVVM\PRG_Lists_Maui_MVVM\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PRG_Lists_Maui_MVVM.AssemblyInfo.cs
 C:\Users\sewil\source\repos\PRG_Lists_Maui_MVVM\PRG_Lists_Maui_MVVM\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PRG_Lists_Maui_MVVM.csproj.CoreCompileInputs.cache
 C:\Users\sewil\source\repos\PRG_Lists_Maui_MVVM\PRG_Lists_Maui_MVVM\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PRG_Lists_Maui_MVVM.sourcelink.json
-C:\Users\sewil\source\repos\PRG_Lists_Maui_MVVM\PRG_Lists_Maui_MVVM\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PRG_Lists_Maui_MVVM.dll
-C:\Users\sewil\source\repos\PRG_Lists_Maui_MVVM\PRG_Lists_Maui_MVVM\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\refint\PRG_Lists_Maui_MVVM.dll
-C:\Users\sewil\source\repos\PRG_Lists_Maui_MVVM\PRG_Lists_Maui_MVVM\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\PRG_Lists_Maui_MVVM.pdb
